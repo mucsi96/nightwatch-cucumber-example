@@ -1,11 +1,11 @@
-const seleniumServer = require('selenium-server')
-const phantomjs = require('phantomjs-prebuilt')
-const chromedriver = require('chromedriver')
-const geckodriver = require('geckodriver')
+const seleniumServer = require('selenium-server');
+const phantomjs = require('phantomjs-prebuilt');
+const chromedriver = require('chromedriver');
+const geckodriver = require('geckodriver');
 
 require('nightwatch-cucumber')({
   cucumberArgs: ['--require', 'step_definitions', '--format', 'json:reports/cucumber.json', 'features']
-})
+});
 
 module.exports = {
   output_folder: 'reports',
@@ -56,4 +56,4 @@ module.exports = {
       }
     }
   }
-}
+};
