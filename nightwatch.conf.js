@@ -47,7 +47,7 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'firefox',
         javascriptEnabled: true,
-        acceptSslCerts: true
+        marionette: true
       },
       selenium: {
         cli_args: {

@@ -4,7 +4,9 @@
   "description": "",
   "main": "nightwatch.conf.js",
   "scripts": {
-    "test": "nightwatch"
+    "test": "nightwatch",
+    "test:chrome": "npm run test -- --env chrome",
+    "test:firefox": "npm run test -- --env firefox"
   },
   "author": "Igor Mucsicska <mucsi_96@yahoo.com>",
   "license": "MIT",
