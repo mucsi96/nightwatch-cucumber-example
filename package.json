@@ -6,7 +6,8 @@
   "scripts": {
     "test": "nightwatch",
     "test:chrome": "npm run test -- --env chrome",
-    "test:firefox": "npm run test -- --env firefox"
+    "test:firefox": "npm run test -- --env firefox",
+    "debug": "node --inspect-brk node_modules/.bin/nightwatch --env chrome"
   },
   "author": "Igor Mucsicska <mucsi_96@yahoo.com>",
   "license": "MIT",
@@ -15,7 +16,7 @@
     "cucumber": "^3.0.0",
     "geckodriver": "^1.8.1",
     "nightwatch": "^0.9.16",
-    "nightwatch-cucumber": "^8.0.4",
+    "nightwatch-cucumber": "^8.0.6",
     "phantomjs-prebuilt": "^2.1.15",
     "selenium-server": "^3.5.0"
   }
