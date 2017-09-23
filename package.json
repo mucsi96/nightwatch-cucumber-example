@@ -4,9 +4,9 @@
   "description": "",
   "main": "nightwatch.conf.js",
   "scripts": {
-    "test": "nightwatch",
-    "test:chrome": "npm run test -- --env chrome",
-    "test:firefox": "npm run test -- --env firefox",
+    "e2e-test": "nightwatch",
+    "e2e-test:chrome": "npm run e2e-test -- --env chrome",
+    "e2e-test:firefox": "npm run e2e-test -- --env firefox",
     "debug": "node --inspect-brk node_modules/.bin/nightwatch --env chrome"
   },
   "author": "Igor Mucsicska <mucsi_96@yahoo.com>",
