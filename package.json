@@ -12,12 +12,12 @@
   "author": "Igor Mucsicska <mucsi_96@yahoo.com>",
   "license": "MIT",
   "dependencies": {
-    "chromedriver": "^2.31.0",
-    "cucumber": "^3.0.0",
+    "chromedriver": "^2.32.3",
+    "cucumber": "^3.0.3",
     "geckodriver": "^1.8.1",
     "nightwatch": "^0.9.16",
-    "nightwatch-cucumber": "^8.0.6",
+    "nightwatch-cucumber": "^8.2.2",
     "phantomjs-prebuilt": "^2.1.15",
-    "selenium-server": "^3.5.0"
+    "selenium-server": "^3.5.3"
   }
 }
