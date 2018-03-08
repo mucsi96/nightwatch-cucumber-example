@@ -1,5 +1,4 @@
 const seleniumServer = require('selenium-server');
-const phantomjs = require('phantomjs-prebuilt');
 const chromedriver = require('chromedriver');
 const geckodriver = require('geckodriver');
 
@@ -25,10 +24,17 @@ module.exports = {
       selenium_port: 4444,
       selenium_host: '127.0.0.1',
       desiredCapabilities: {
-        browserName: 'phantomjs',
+        browserName: 'chrome',
         javascriptEnabled: true,
         acceptSslCerts: true,
-        'phantomjs.binary.path': phantomjs.path
+        chromeOptions: {
+          args: ['incognito', 'headless', 'no-sandbox', 'disable-gpu']
+        }
+      },
+      selenium: {
+        cli_args: {
+          'webdriver.chrome.driver': chromedriver.path
+        }
       }
     },
     chrome: {
